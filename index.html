@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW-8</title>
+    <style>
+      /* Завдання №1 */
+
+      .text-box > h3:first-child {
+        color: pink;
+      }
+      #greycol {
+        color: grey;
+      }
+
+      .text-box > div > p {
+        color: red;
+      }
+
+      .text-box > p:nth-child(7) {
+        color: green;
+      }
+
+      .yellow {
+        color: yellow;
+      }
+
+      /* Завдання №2 */
+
+      /* Global styles */
+
+      ul > li:hover {
+        font-size: 48px;
+      }
+
+      ul > button:disabled {
+        color: teal;
+      }
+
+      ul > li:first-child > a:link {
+        color: inherit;
+      }
+      ul > li:first-child > a:visited {
+        color: gray;
+      }
+
+      ul > li > a:only-child {
+        font-size: 30px;
+      }
+
+      ul > li:nth-child(3) {
+        font-size: 24px;
+      }
+
+      ul > li:nth-last-child(2) {
+        font-size: 32px;
+      }
+
+      /* First list */
+
+      .first li:nth-child(2n) {
+        color: blueviolet;
+      }
+      .first li:not(:nth-child(2n)) {
+        color: brown;
+      }
+
+      /* Second list */
+
+      .second li:nth-child(3n) {
+        color: blue;
+      }
+      .second li:not(:nth-child(3n)) {
+        color: red;
+      }
+
+      /* Third list */
+
+      .third li:nth-child(3n) {
+        color: chartreuse;
+      }
+      .third li:not(:nth-child(3n)) {
+        color: lightcoral;
+      }
+
+      /* Fourth list */
+
+      .fourth li:nth-child(2n) {
+        color: tomato;
+      }
+      .fourth li:not(:nth-child(2n)) {
+        color: orange;
+      }
+
+      /* Fifth list */
+
+      .fifth li:nth-child(2n) {
+        color: aqua;
+      }
+      .fifth li:not(:nth-child(2n)) {
+        color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Завдання №1 -->
+
+    <div class="text-box">
+      <h3>Пофарбуйте мене в рожевий колір (color:pink).</h3>
+      <p>Даний елемент має залишитись неоформленим.</p>
+      <p id="greycol">Пофарбуйте мене в сірий колір (color:grey).</p>
+      <div>Даний елемент має залишитись неоформленим.</div>
+      <div><p>Пофарбуйте мене в червоний колір (color:red).</p></div>
+      <h3>Даний елемент має залишитись неоформленим.</h3>
+      <p>Пофарбуйте мене в зелений колір (color:green).</p>
+      <p class="yellow">Пофарбуйте мене в жовтий колір (color:yellow).</p>
+    </div>
+
+    <!-- Завдання №2 -->
+
+    <div>
+      <ul class="first">
+        <li><a href="">Фізика</a></li>
+        <li>Англійська мова</li>
+        <li>Англійська мова</li>
+        <li>Українська мова</li>
+        <li>Українська мова</li>
+        <li>Польська мова</li>
+        <button disabled>Зрозумів</button>
+      </ul>
+      <ul class="second">
+        <li><a href="">Фізкультура</a></li>
+        <li>Інформатика</li>
+        <li>Інформатика</li>
+        <li>Основи здоров'я</li>
+        <li>Економіка</li>
+        <li>Геометрія</li>
+        <li>Хімія</li>
+        <button disabled>Зрозумів</button>
+      </ul>
+      <ul class="third">
+        <li><a href="">Алгебра</a></li>
+        <li>Фізкультура</li>
+        <li>Французька мова</li>
+        <li>Історія України</li>
+        <li>Біологія</li>
+        <li>Біологія</li>
+        <li>Українська література</li>
+        <button disabled>Зрозумів</button>
+      </ul>
+      <ul class="fourth">
+        <li><a href="">Українська мова</a></li>
+        <li>Геометрія</li>
+        <li>Англійська мова</li>
+        <li>Всесвітня Історія</li>
+        <li>Зарубіжна література</li>
+        <li>Зарубіжна література</li>
+        <li>Фізика</li>
+        <li>ЗФП</li>
+        <button disabled>Зрозумів</button>
+      </ul>
+      <ul class="fifth">
+        <li><a href="">Правознавство</a></li>
+        <li>Хімія</li>
+        <li>Алгебра</li>
+        <li>Алгебра</li>
+        <li>Українська література</li>
+        <li>Французька мова</li>
+        <li>Географія</li>
+        <li>Трудове навчання</li>
+        <button disabled>Зрозумів</button>
+      </ul>
+    </div>
+  </body>
+</html>
